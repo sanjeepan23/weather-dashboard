@@ -8,10 +8,14 @@ Python
 ```
 
 # Installation steps
+
+# Clone the repo
+Use the following command to clone the repo
+```
+https://github.com/sanjeepan23/weather-dashboard.git
+```
 # Start the Wave server
-To start the Wave server, simply open a new terminal window and execute `waved` (or `waved.exe` on Windows).
-`cd $HOME/wave`
-`./waved`
+After Cloning, move the dir to inside existing conda environment. then use the `./waved` command to start the server in Linux and use `waved` in Windows
 
 # Set up a working directory
 Next, let's set up a working directory to author our program.
