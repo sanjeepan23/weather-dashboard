@@ -15,10 +15,10 @@ Use the following command to clone the repo
 https://github.com/sanjeepan23/weather-dashboard.git
 ```
 # Start the Wave server
-After Cloning, move the dir to inside existing conda environment. then use the `./waved` command to start the server in Linux and use `waved` in Windows
+After Cloning, move the dir to inside existing conda environment. then use the `./waved` command to start the server in Linux and use `waved` in Windows.
 
 # Run the App
-Enter `cd weather` to get inside working dir. Then Simply run the app by `wave run weather.app`. you can also use `wave run --no-reload weather.app` to run without reloading
+Enter `cd weather` to get inside working dir. Then Simply run the app by `wave run weather.app`. you can also use `wave run --no-reload weather.app` to run without reloading.
 
 Useful Links:
 
