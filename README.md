@@ -1,6 +1,6 @@
 # weather-dashboard
 
-#This app uses below Tools technologies.
+This app uses below Tools technologies.
 
 ```
 H2o Wave
