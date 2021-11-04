@@ -7,7 +7,7 @@ H2o Wave
 Python
 ```
 
-##Installation steps
+# Installation steps
 # Start the Wave server
 To start the Wave server, simply open a new terminal window and execute `waved` (or `waved.exe` on Windows).
 `cd $HOME/wave`
