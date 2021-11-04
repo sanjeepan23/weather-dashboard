@@ -1,5 +1,5 @@
 from h2o_wave import main, app, Q
-from .dashboard_red import show_dashboard
+from .dashboard import show_dashboard
 
 @app('/')
 async def serve(q: Q):
@@ -14,7 +14,6 @@ async def serve(q: Q):
         await show_dashboard(q,"Colombo")
     elif route == 'dashboards/Paris':
         await show_dashboard(q,"Paris")
-
     elif route == 'dashboards/Mumbai':
         await show_dashboard(q,"Mumbai")
     elif route == 'dashboards/Singapore':

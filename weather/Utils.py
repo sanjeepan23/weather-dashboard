@@ -14,7 +14,33 @@ city_cood = { "London":[51.50,-0.11],
               "Singapore":[1.29,103.85],
               "Melbourne":[-37.84,144.94],
               "Tokyo":[35.65,139.83],
-}
+            }
+
+
+
+def extract_forecast_temp(data_forecast):
+    row = []
+    for i in data_forecast:
+        dt = datetime.datetime.utcfromtimestamp(int(i["dt"])).strftime('%Y-%m-%d %H:%M:%S')
+        t = ("Hour",dt,i["temp"])
+        row.append(t)
+    return row
+
+def extract_forecast_humty(data_forecast):
+    row = []
+    for i in data_forecast:
+        dt = datetime.datetime.utcfromtimestamp(int(i["dt"])).strftime('%Y-%m-%d %H:%M:%S')
+        t = ("Humidity",dt,i["humidity"])
+        row.append(t)
+    return row
+
+def extract_forecast_wind_spd(data_forecast):
+    row = []
+    for i in data_forecast:
+        dt = datetime.datetime.utcfromtimestamp(int(i["dt"])).strftime('%Y-%m-%d %H:%M:%S')
+        t = ("Wind Speed",dt,i["wind_speed"]*3.6)
+        row.append(t)
+    return row
 
 def get_Data_forecast(city):
     lat,lon = city_cood[city][0],city_cood[city][1]
@@ -1209,27 +1235,3 @@ def get_Data_current(city):
             "cod": 200
         }
     return r_dictionary
-
-def extract_forecast_temp(data_forecast):
-    row = []
-    for i in data_forecast:
-        dt = datetime.datetime.utcfromtimestamp(int(i["dt"])).strftime('%Y-%m-%d %H:%M:%S')
-        t = ("Hour",dt,i["temp"])
-        row.append(t)
-    return row
-
-def extract_forecast_humty(data_forecast):
-    row = []
-    for i in data_forecast:
-        dt = datetime.datetime.utcfromtimestamp(int(i["dt"])).strftime('%Y-%m-%d %H:%M:%S')
-        t = ("Humidity",dt,i["humidity"])
-        row.append(t)
-    return row
-
-def extract_forecast_wind_spd(data_forecast):
-    row = []
-    for i in data_forecast:
-        dt = datetime.datetime.utcfromtimestamp(int(i["dt"])).strftime('%Y-%m-%d %H:%M:%S')
-        t = ("Wind Speed",dt,i["wind_speed"]*3.6)
-        row.append(t)
-    return row
