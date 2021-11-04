@@ -1,0 +1,12 @@
+pygments
+Faker
+numpy
+pandas
+bokeh
+matplotlib
+plotly
+altair
+vega-datasets
+scikit-learn
+opencv-python
+h2o_wave[ml]
