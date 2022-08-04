@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+# Weather-dashboard
 
-You can use the [editor on GitHub](https://github.com/sanjeepan23/weather-dashboard/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+This app uses below Tools technologies.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+H2o Wave
+Python
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+# Installation steps
 
-### Jekyll Themes
+# Clone the repo
+Use the following command to clone the repo
+```
+https://github.com/sanjeepan23/weather-dashboard.git
+```
+# Start the Wave server
+After Cloning, move the dir to inside existing conda environment. then use the `./waved` command to start the server in Linux and use `waved` in Windows.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sanjeepan23/weather-dashboard/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+# Run the App
+Enter `cd weather` to get inside working dir. Then Simply run the app by `wave run weather.app`. you can also use `wave run --no-reload weather.app` to run without reloading.
 
-### Support or Contact
+Useful Links:
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- https://wave.h2o.ai/
+- https://wave.h2o.ai/docs/examples/all
+- https://openweathermap.org/api
+
+
+# Screen Shots
+![alt text](https://github.com/sanjeepan23/weather-dashboard/blob/main/assets/.h2o.png?raw=true)
+![alt text](https://github.com/sanjeepan23/weather-dashboard/blob/main/assets/2.h2o.png?raw=true)
+
+
